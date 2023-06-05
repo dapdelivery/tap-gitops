@@ -1,0 +1,24 @@
+---
+tap_install:
+  values:
+    profile: view
+    ceip_policy_disclosed: true
+
+    # accelerator:
+    #   server:
+    #     service_type: ClusterIP
+    
+    contour:
+      envoy:
+        service:
+          type: LoadBalancer
+
+    # learningcenter:
+    #   ingressDomain: educates.tanzu.vmwware.com
+
+    tap_telemetry:
+      customer_entitlement_account_number: "123456789"
+      installed_for_vmware_internal_use: "true"
+
+    # metadata_store:
+    #   ingress_issuer: "tap-ingress-selfsigned"

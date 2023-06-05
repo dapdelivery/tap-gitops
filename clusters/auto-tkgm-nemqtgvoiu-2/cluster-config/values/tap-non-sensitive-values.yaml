@@ -1,0 +1,15 @@
+---
+tap_install:
+  values:
+    profile: build
+    ceip_policy_disclosed: TRUE
+    supply_chain: basic
+
+    # namespace_provisioner:
+    #   controller: true
+    #   additional_sources:
+    #     - git:
+    #         ref: origin/main
+    #         subPath: namespace-provisioner-gitops-examples/custom-resources/testing-scanning-supplychain
+    #         url: https://github.com/dapdelivery/application-accelerator-samples.git
+    #       path: _ytt_lib/testing-scanning-supplychain-setup

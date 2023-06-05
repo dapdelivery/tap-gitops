@@ -1,0 +1,17 @@
+---
+tap_install:
+  values:
+    profile: run
+    ceip_policy_disclosed: TRUE
+    
+    supply_chain: basic
+    
+    contour:
+      envoy:
+        service:
+          type: LoadBalancer
+    appliveview_connector:
+      backend:
+        sslDeactivated: TRUE
+        ingressEnabled: true
+        host: appliveview.tap.auto-tkgm-nemqtgvoiu.tapdemo.eng.vmware.com
